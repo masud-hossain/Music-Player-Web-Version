@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Music Player</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fontawesome-free/css/all.css">
+    <script src="assets/js/jquery.min.js"></script>
+
+    
+  </head>
+  <body class="d-flex align-items-center justify-content-center vh-100" >
+    
+    <div class="height bg-white col-6 shadow-lg">
+        <header class="height-10 shadow-sm">
+            <div class="row">
+                <div class="col-6">
+                    <h1 class="headerFont px-4 pt-3">Music</h1>
+                </div>
+                <div class="col-6 d-flex flex-column align-items-end">
+                    <nav class="mx-4 pt-3">
+                        <i class="fa fa-search p-3 boldIcon"></i> <i class="fa-solid fa-ellipsis-vertical boldIcon"></i>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="height-75">
+
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+                  <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                  <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
+              </div>
+
+        </section>
+        <footer class="height-15 shadow-top">
+            <div class="row">
+                <div class="col-3">
+                    <img class="rounded-circle thumpImage bg-white p-1" src="assets/img/placeholder.jpg" alt="Placeholder Image">
+                </div>
+                <div class="col-9">
+                    <div class="progress col-11 mt-4 mb-2" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 25%">25%</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-7">
+                            <p style="line-height: 18px;"><b>Every night in my dream</b> <br> <small>By Saline deone</small></p>
+                        </div>
+                        <div class="col-5" style="padding: 4px 0px 0px 30px;">
+                            <i class="fa fa-backward-step handleIcon"></i>
+                            <i class="fa fa-play handleIconPlay px-4"></i>
+                            <i class="fa fa-forward-step handleIcon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
